@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+/* Flexbox utiliza 2 tipos de cajas */
+/* Flex containers y flex items */
+/* Un flex container agrupa un montón de elementos flexibles y ve cómo se conectan */
+.header-container {
+    color: #fff;
+    background-color: rgb(64, 152, 224);
+    padding: 20px 0;
+
+    /* Habilitamos los poderes de flexbox */
+    display: flex;
+    /* Una de las propiedades me permite alinear horizontalmente los elementos internos */
+    justify-content: center;
+}
+
+.header {
+    border: 1px solid #fff;
+    width: 60%;
+    /* Habilito flexbox de nuevo / Poniendo solo "flex" ya se me colocan en línea los elementos */
+    display: flex;
+    /* Alinea horizontalmente y también distribuye los elementos en todo el ancho del que los contiene */
+    justify-content: space-between;
+}
+
+/* Fin de los estilos del header */
+
+/* Estilos para la sección de productos */
+
+.section-container {
+    color: rgb(63, 27, 192);
+    background-color: #b8e6f3;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    /* Alineación vertical del elemento: align */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos sección productos o photo-grid */
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap . Lo que hace es estar atento a que no desborde ningún elemento */
+    flex-wrap: wrap;
+    /* flex-direction . Cambia la dirección de los elementos (column, row, column-reverse, row-reverse */
+    flex-direction: row;
+}
+
+.first-item {
+    /* La propiedad ORDER lo que hace es afectar a los elementos a las que se los aplico */
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
+
